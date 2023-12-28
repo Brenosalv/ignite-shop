@@ -1,40 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ignite-shop
 
-## Getting Started
+This application is a simple e-commerce of T-shirts with space theme.
 
-First, run the development server:
+Tech stack: HTML, CSS, Typescript, React.js, Next.js 13, Stitches and Stripe.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Table of Contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Contributing](#contributing)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Installation
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+1. Clone the repository:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+   ```shell
+   git clone https://github.com/your-username/ignite-shop.git
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. Navigate to the project directory:
 
-## Learn More
+   ```shell
+   cd ignite-shop
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. Install the dependencies:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```shell
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. Start the application:
 
-## Deploy on Vercel
+   ```shell
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. Open the application in your browser:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```
+   http://localhost:3000
+   ```
+
+## Usage
+
+Once the application is running, you can navigate to the homepage to view the blog. The homepage displays your GitHub profile information and a list of issues from the specified repository.
+
+- The profile section includes your profile picture, number of followers, name, and other relevant details.
+- The issue section provides a summary of each issue, including the issue title, description, and any additional relevant information.
+
+To view a complete post (issue), click on the desired issue from the list. You will be redirected to a page that displays detailed information about the selected issue.
+
+## Features
+
+- Fetches data from the GitHub API to dynamically populate your profile information and display a list of issues.
+- Allows filtering and searching of issues based on specific criteria.
+- Provides a complete post view with comprehensive details of each issue.
+
+## Contributing
+
+Contributions are welcome! If you have any improvements or bug fixes, feel free to submit a pull request. Please ensure your changes adhere to the following guidelines:
+
+- Fork the repository.
+- Create a new branch for your feature/fix.
+- Make your changes and ensure they work as intended.
+- Commit your changes and push them to your fork.
+- Submit a pull request, explaining the changes you've made.
