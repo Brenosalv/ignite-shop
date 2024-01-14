@@ -1,4 +1,4 @@
-import { styled } from "..";
+import { styled } from ".."
 
 export const SuccessContainer = styled('main', {
   display: 'flex',
@@ -34,7 +34,7 @@ export const SuccessContainer = styled('main', {
       color: '$green300',
     }
   }
-});
+})
 
 export const ImageContainer = styled('div', {
   width: '100%',
@@ -53,4 +53,17 @@ export const ImageContainer = styled('div', {
   img: {
     objectFit: 'cover',
   }
-});
+})
+
+export const ProductsList = styled('ul', {
+  display: 'flex',
+  flexDirection: 'column',
+  marginTop: 16,
+})
+
+export const ImagesList = styled('div', {
+  display: 'flex',
+  gap: 16,
+  alignItems: 'center',
+  justifyContent: 'center',
+})

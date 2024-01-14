@@ -5,6 +5,7 @@ export const HomeContainer = styled('main', {
   width: '100%',
   maxWidth: 'calc(100vw - ((100vw - 1180px) / 2))',
   marginLeft: 'auto',
+  marginBottom: '32px',
   minHeight: 656,
   overflow: 'hidden',
 })
@@ -34,7 +35,7 @@ export const Product = styled('div', {
     alignItems: 'center',
     justifyContent: 'space-between',
     backgroundColor: 'rgba(0, 0, 0, 0.6)',
-    padding: '2rem',
+    padding: '1.5rem',
 
     transform: 'translateY(110%)',
     opacity: 0,
@@ -50,6 +51,12 @@ export const Product = styled('div', {
       fontWeight: 'bold',
       color: '$green300',
     },
+
+    'div:first-child': {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 4
+    }
   },
 
   '&:hover': {
