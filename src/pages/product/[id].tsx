@@ -21,19 +21,19 @@ export default function Product({ product }: ProductProps) {
   return (
     <>
       <Head>
-        <title>{product.name} | Ignite Shop</title>
+        <title>{product?.name} | Ignite Shop</title>
       </Head>
 
       <ProductContainer>
         <ImageContainer>
-          <Image src={product.imageUrl} width={520} height={480} alt="" />
+          <Image src={product?.imageUrl} width={520} height={480} alt="" />
         </ImageContainer>
 
         <ProductDetails>
-          <h1>{product.name}</h1>
-          <span>{product.price}</span>
+          <h1>{product?.name}</h1>
+          <span>{product?.price}</span>
 
-          <p>{product.description}</p>
+          <p>{product?.description}</p>
 
           <button onClick={handleAddToCart}>
             Add to cart
@@ -60,19 +60,19 @@ export const getStaticProps: GetStaticProps<any, { id: string }> = async ({ para
     expand: ['default_price']
   });
 
-  const price = product.default_price as Stripe.Price;
+  const price = product?.default_price as Stripe.Price;
 
   return {
     props: {
       product: {
-        id: product.id,
-        name: product.name,
-        imageUrl: product.images[0],
+        id: product?.id,
+        name: product?.name,
+        imageUrl: product?.images[0],
         price: new Intl.NumberFormat('pt-BR', {
           style: 'currency',
           currency: 'BRL'
         }).format((price.unit_amount || 0) / 100),
-        description: product.description,
+        description: product?.description,
         defaultPriceId: price.id
       }
     },
