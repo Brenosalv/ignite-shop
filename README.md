@@ -4,6 +4,8 @@ This application is a simple e-commerce of T-shirts with space theme.
 
 Tech stack: HTML, CSS, Typescript, React.js, Next.js 13, Stitches and Stripe.
 
+Access the deployed application here: https://ignite-shop-dun.vercel.app/
+
 ## Table of Contents
 
 - [Installation](#installation)
